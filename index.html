@@ -2,31 +2,149 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Giriş </title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sedan+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Ludiflex | Login & Registration</title>
 </head>
 <body>
-    
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <h2><a href="#"> Nigar. </a></h2>
-            </div>
-            <ul class="nav_links">
-                <li><a href="#anasayfa">Anasayfa</a></li>
-                <li><a href="#hakkimda">Hakkımda</a></li>
-                <li><a href="#memleketim">Memleketim</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>NIGAR.</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#anasayfa" class="link active">Anasayfa</a></li>
+                <li><a href="#hakkimda" class="link">Hakkımda</a></li>
+                <li><a href="#memleketim" class="link">Memleketim</a></li>
+                <li><a href="#iletisim" class="link">İletişim</a></li>
             </ul>
         </div>
-        <div>
-            <button class="btn" id="loginBtn">Kayıt Ol</button>
-            <button class="btn" id="registerBtn">Üye Ol</button>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="login()">Kayıt ol</button>
+            <button class="btn" id="registerBtn" onclick="register()">Üye ol</button>
         </div>
-    </header>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+<!----------------------------- Form box ----------------------------------->    
+    <div class="form-box">
+        
+        <!------------------- login form -------------------------->
+
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Hesabınız yok mu? <a href="#" onclick="register()">Üye ol</a></span>
+                <header>Kayıt ol</header>
+            </div>
+            <div class="input-box">
+                <input type="email" class="input-field" placeholder="Email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Şifre">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Kayıt Ol">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Beni hatırla</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Şifrenizi unutdunuzmu?</a></label>
+                </div>
+            </div>
+        </div>
+
+        <!------------------- registration form -------------------------->
+        <div class="register-container" id="register">
+            <div class="top">
+                <span>Hesabınız var mı? <a href="#" onclick="login()">Kayıt ol</a></span>
+                <header>Üye ol</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="İsim">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Soyisim">
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="email" class="input-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Şifre">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Üye ol">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> Beni hatırla</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Şartlar ve koşullar</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+
+
+<script>
+   
+   function myMenuFunction() {
+    var i = document.getElementById("navMenu");
+
+    if(i.className === "nav-menu") {
+        i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+    }
+   }
+ 
+</script>
+
+<script>
+
+    var a = document.getElementById("loginBtn");
+    var b = document.getElementById("registerBtn");
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+
+    function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+    }
+
+    function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+    }
+
+</script>
+
 </body>
-</html>
 </html>
