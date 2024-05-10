@@ -99,3 +99,51 @@ header{
 .nav-menu-btn{
     display: none;
 }
+@media screen and (max-width: 768px) {
+    .nav_links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #79c2d0;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+    .child_anasayfa h1{
+        display: none;
+    }
+}
