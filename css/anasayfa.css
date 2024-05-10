@@ -1,0 +1,101 @@
+html{
+    scroll-behavior: smooth;
+}
+*{  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: #79c2d0;
+    font-family: "Libre Baskerville", sans-serif;
+}
+/*--------------------- Section ---------------------*/
+section{
+    padding: 100px 0;
+    background: #79c2d0;
+}
+.section_title{
+    margin-bottom: 30px;
+}
+.section_title h2{
+    position: relative;
+    text-align: center;
+    color: #fff; 
+    transition: all .5s ease-in-out;
+    font-size: 30px;
+}
+.section_title h2:hover{
+    background: #78c2c3;
+}
+/*--------------------- Header ---------------------*/
+header{
+    background: #79c2d0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 0;
+    background: linear-gradient(pink, transparent);
+    min-height: 100px;
+}
+.nav_links{
+    display: flex;
+}
+.nav_links li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.nav_links li a:hover{
+    border-bottom: 2px solid #fff;
+}
+.logo h2 a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+/*--------------------- Anasayfa ---------------------*/
+.inner_anasayfa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+}
+.child_anasayfa{
+    flex-basis: 45%;
+}
+.child_anasayfa h1{
+    font-size: 50px;
+    color: #fff;
+}
+.span_child{
+    color: #fff;
+}
+.nav_button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgb(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background: rgb(255, 255, 255, 0.7);
+}
+.nav-menu-btn{
+    display: none;
+}
