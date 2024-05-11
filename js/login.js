@@ -31,3 +31,17 @@ function myMenuFunction() {
             x.style.opacity = 0;
             y.style.opacity = 1;
         }
+
+        document.getElementById("downloadBtn").addEventListener("click", function() {
+            // Create a new anchor element
+            var link = document.createElement("a");
+            // Set its attributes
+            link.href = "cv.pdf"; // Replace "cv.pdf" with the path to your CV file
+            link.download = "ozgecmis.pdf"; // Rename the downloaded file if needed
+            // Simulate click on the anchor element
+            document.body.appendChild(link);
+            link.click();
+            // Clean up
+            document.body.removeChild(link);
+        });
+        

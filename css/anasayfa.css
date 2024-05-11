@@ -178,7 +178,7 @@ header{
     flex-basis: 45%;
 }
 .icons{
-    background: #bbe4e9; /* Arka plan rengi */
+    background:rgba(255, 255, 255, 0.15); /* Arka plan rengi */
     padding: 60px; 
 }
 .icon-container {
@@ -189,4 +189,62 @@ header{
 .icon-container i {
     font-size: 24px; /* Simgelerin boyutu */
     margin-left: 10px; /* Simgeler arasında boşluk bırakır */
+}
+.cv {
+    background: rgb(226, 223, 223);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main section {
+    background: rgb(226, 223, 223);
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer; /* İlgili özelliği ekledik */
+    border: none; /* Kenarlık yok */
+    outline: none; /* Odak çerçevesi yok */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Fare üzerine gelindiğinde rengi değiştir */
+}
+
+.btn:active {
+    background-color: #004080; /* Tuşa basıldığında rengi değiştir */
 }
