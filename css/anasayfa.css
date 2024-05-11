@@ -47,6 +47,7 @@ header{
 }
 .nav_links{
     display: flex;
+    margin-top: 20px;
 }
 .nav_links li a{
     text-decoration: none;
@@ -57,6 +58,9 @@ header{
 }
 .nav_links li a:hover{
     border-bottom: 2px solid #fff;
+}
+.logo{
+    margin-top: 15px;
 }
 .logo h2 a{
     color: #fff;
@@ -85,6 +89,7 @@ header{
 }
 .nav_button .btn{
     width: 130px;
+    margin-top: 10px;
     height: 40px;
     font-weight: 500;
     background: rgb(255, 255, 255, 0.4);
@@ -99,7 +104,7 @@ header{
 .nav-menu-btn{
     display: none;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .nav_links {
         display: none;
         position: absolute;
@@ -146,4 +151,42 @@ header{
     .child_anasayfa h1{
         display: none;
     }
+}
+.aboutme{
+    color: #e3e3e3;
+}
+.aboutme_child1{
+    position: relative;/* Konumlandırma yapabilmek için container'a göre pozisyonlandırma yapar */
+    width: 300px; /* Container'ın genişliği */
+    height: 400px; /* Container'ın yüksekliği */
+}
+.image1{
+    position: absolute; /* Görsel mutlak konumlandırma için */
+    top: 0; /* Yukarıdan mesafe */
+    right: 0; /* Sağdan mesafe */
+    max-width: 100%; /* Maksimum genişlik */
+    max-height: 100%;
+}
+.aboutme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.aboutme_child{
+    flex-basis: 45%;
+}
+.icons{
+    background: #bbe4e9; /* Arka plan rengi */
+    padding: 60px; 
+}
+.icon-container {
+    display: flex; /* Simgeleri yatay olarak hizalar */
+    justify-content: flex-end; /* Sağa hizalar */
+}
+
+.icon-container i {
+    font-size: 24px; /* Simgelerin boyutu */
+    margin-left: 10px; /* Simgeler arasında boşluk bırakır */
 }
