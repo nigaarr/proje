@@ -152,6 +152,7 @@ header{
         display: none;
     }
 }
+/*-------------------- Hakkımda -------------------------*/
 .aboutme{
     color: #e3e3e3;
 }
@@ -167,6 +168,13 @@ header{
     max-width: 100%; /* Maksimum genişlik */
     max-height: 100%;
 }
+.icon-container {
+    align-items: center;
+}
+.image2{
+    max-width: 50%;
+    max-height: 50%;
+}
 .aboutme{
     display: flex;
     justify-content: space-between;
@@ -178,18 +186,37 @@ header{
     flex-basis: 45%;
 }
 .icons{
+    text-align: center;
     background:rgba(255, 255, 255, 0.15); /* Arka plan rengi */
     padding: 60px; 
 }
 .icon-container {
     display: flex; /* Simgeleri yatay olarak hizalar */
-    justify-content: flex-end; /* Sağa hizalar */
+    justify-content: space-between; /* Sağa hizalar */
 }
-
+.instagram-link,
+.linkedin-link,
+.facebook-link,
+.snapchat-link,
+.telegram-link,
+.spotify-link {
+    color: #ffcbcb;
+    font-size: 10px;
+    transition: color 0.3s ease;
+}
+.instagram-link:hover,
+.linkedin-link:hover,
+.facebook-link:hover,
+.snapchat-link:hover,
+.telegram-link:hover,
+.spotify-link:hover {
+    color: #ffb5b5; /* Koyu pembe rengi */
+}
 .icon-container i {
     font-size: 24px; /* Simgelerin boyutu */
     margin-left: 10px; /* Simgeler arasında boşluk bırakır */
 }
+/*-------------------------- CV -------------------------*/
 .cv {
     background: rgb(226, 223, 223);
     background-attachment: fixed;
