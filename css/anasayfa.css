@@ -226,13 +226,16 @@ header{
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
+    position: relative;
 }
 
 .header {
     text-align: center;
     margin-bottom: 20px;
 }
-
+.main{
+    position: relative;
+}
 .main section {
     background: rgb(226, 223, 223);
     margin-bottom: 20px;
@@ -274,4 +277,12 @@ ul li {
 
 .btn:active {
     background-color: #004080; /* Tuşa basıldığında rengi değiştir */
+}
+.profile-pic {
+    width: 150px; /* Resmin genişliği */
+    height: 150px; /* Resmin yüksekliği */
+    border-radius: 10px; /* Dikdörtgen şeklinde kenarlar */
+    position: absolute; /* Mutlak konumlandırma */
+    top: 10px; /* Üstten 10 piksel mesafe */
+    right: 10px; /* Sağdan 10 piksel mesafe */
 }

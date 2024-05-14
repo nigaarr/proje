@@ -44,4 +44,6 @@ function myMenuFunction() {
             // Clean up
             document.body.removeChild(link);
         });
-        
+        document.getElementById("memleketimDropdown").addEventListener("click", function() {
+            document.getElementById("memleketimContent").classList.toggle("show");
+        });
