@@ -283,6 +283,6 @@ ul li {
     height: 150px; /* Resmin yüksekliği */
     border-radius: 10px; /* Dikdörtgen şeklinde kenarlar */
     position: absolute; /* Mutlak konumlandırma */
-    top: 10px; /* Üstten 10 piksel mesafe */
+    top: 0px; /* Üstten 10 piksel mesafe */
     right: 10px; /* Sağdan 10 piksel mesafe */
 }
