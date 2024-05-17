@@ -64,7 +64,6 @@ function updateSlider() {
 
 
 
-// JavaScript kodunu ekleyin
 document.addEventListener("DOMContentLoaded", function() {
     // Tüm slide resimlerini seç
     var slideImages = document.querySelectorAll(".slide-image");
@@ -79,3 +78,5 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
