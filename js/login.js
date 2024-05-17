@@ -47,3 +47,5 @@ function myMenuFunction() {
         document.getElementById("memleketimDropdown").addEventListener("click", function() {
             document.getElementById("memleketimContent").classList.toggle("show");
         });
+
+//Slider
